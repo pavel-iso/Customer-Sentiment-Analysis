@@ -1,11 +1,11 @@
-Customer Sentiment Analysis - Floweraura
-1. Overview of Data Collection and Cleaning
+# Customer Sentiment Analysis - Floweraura
+**1. Overview of Data Collection and Cleaning**
 
-Source: Reviews scraped from FlowerAura’s product page (10 pages of reviews).
+**Source:** Reviews scraped from FlowerAura’s product page (10 pages of reviews).
 
-Data Collected: Reviewer names, city, occasion, posted date, ratings, and review text.
+**Data Collected:** Reviewer names, city, occasion, posted date, ratings, and review text.
 
-Cleaning Steps:
+**Cleaning Steps:**
 
 Extracted and standardized review dates (removed suffixes like st, nd, rd, th).
 
@@ -13,15 +13,15 @@ Converted ratings from text to numeric (1–5 stars).
 
 Applied TextBlob to compute:
 
-Polarity → Sentiment score (–1 = negative, +1 = positive).
+**Polarity** → Sentiment score (–1 = negative, +1 = positive).
 
-Subjectivity → Degree of opinion vs fact.
+**Subjectivity** → Degree of opinion vs fact.
 
-Added derived features: Review Length (word count) and Score (positive/negative based on polarity).
+**Added derived features:** Review Length (word count) and Score (positive/negative based on polarity).
 
-2. Sentiment Analysis Results
+**2. Sentiment Analysis Results**
 
-Distribution of Sentiment:
+*Distribution of Sentiment:*
 
 Majority of reviews are positive, reflecting overall customer satisfaction.
 
@@ -29,25 +29,26 @@ A smaller portion are negative, but those reviews tend to be longer and more det
 
 Average Sentiment per Rating:
 
-5★ ratings* → Strongly positive polarity (customers happy with freshness, presentation, and delivery).
+* 5★ ratings* → Strongly positive polarity (customers happy with freshness, presentation, and delivery).
 
-3★ ratings* → Mixed polarity (neutral or balanced opinions).
+* 3★ ratings* → Mixed polarity (neutral or balanced opinions).
 
-1★–2★ ratings* → Strongly negative polarity (complaints about delivery, freshness).
+* 1★–2★ ratings* → Strongly negative polarity (complaints about delivery, freshness).
 
-Correlation:
+**Correlation:**
 
 Positive correlation between numeric rating and sentiment polarity (higher rating = more positive sentiment).
 
-Review Length Insights:
+**Review Length Insights:**
 
-Negative reviews are longer → unhappy customers provide detailed complaints.
+*Negative reviews are longer* → unhappy customers provide detailed complaints.
 
-Positive reviews are shorter → often quick praises like “Beautiful bouquet” or “Loved it”.
+*Positive reviews are shorter* → often quick praises like “Beautiful bouquet” or “Loved it”.
 
-3. Insights Positive Highlights:
+**3. Insights**
+ **Positive Highlights:**
 
-Customers appreciate:
+**Customers appreciate:**
 
 Freshness of roses.
 
@@ -57,7 +58,7 @@ On-time delivery on special occasions.
 
 Emotional satisfaction when gifting (Anniversaries, Birthdays, Valentine’s Day).
 
-Common Issues:
+ **Common Issues:**
 
 Late delivery reported in some cities.
 
@@ -67,24 +68,28 @@ Size/quantity mismatch (bouquet smaller than expected).
 
 Packaging concerns (roses not arranged properly).
 
-4. Recommendations
+**4. Recommendations**
 
-Product Quality:
+* **Product Quality:**
+
 Ensure strict freshness checks before dispatch.
 
 Improve packaging to maintain bouquet shape during transit.
 
-Delivery Experience:
+* **Delivery Experience:**
+
 Strengthen last-mile logistics to ensure timely delivery, especially on occasions.
 
 Introduce delivery time-slot guarantees (customers value punctuality for gifting).
 
-Customer Transparency:
+* **Customer Transparency:**
+
 Set clear expectations about bouquet size/quantity to avoid disappointment.
 
 Highlight freshness guarantee in product descriptions and marketing.
 
-Marketing Opportunities:
+* **Marketing Opportunities:**
+
 Leverage positive reviews (freshness, happiness of recipients) in ads.
 
 Promote occasion-specific campaigns (Valentine’s Day, Anniversaries).
